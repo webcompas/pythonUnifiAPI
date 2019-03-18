@@ -120,6 +120,15 @@ class UnifiAPI:
         self.loggedin = False
         return {}
 
+    def change_site(self, site='default'):
+        """
+        Change site
+        :param site:
+        :return:
+        """
+        self.site = site
+        return {}
+
     def authorize_guest(self, mac, minutes=60, up=None, down=None, mbytes=None, apmac=None):
         """
         Authorize one guest
