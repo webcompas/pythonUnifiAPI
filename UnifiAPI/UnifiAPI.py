@@ -790,7 +790,6 @@ class UnifiAPI:
         content = self.sitecmdjson('/rest/wlanconf')
         return self.response(content, inspect.stack()[0].function, 'Get WLAN Conf')
 
-
     def list_alarms(self):
         """
         List the alarms
